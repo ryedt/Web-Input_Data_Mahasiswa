@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Input Data Mahasiswa</title>
+    <style>
+        body {
+            background-image: url("BG02.jpg");
+            background-size: cover;
+            color: #000;
+            font-family: Cambria, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+        }
+
+        h1 {
+            color: #000000;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h5 {
+            color: #000000;
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.75);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 30px auto;
+            max-width: 600px;
+            padding: 40px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        select {
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            padding: 8px;
+            width: 100%;
+            background-color: #f8f8f8;
+            color: #000;
+        }
+
+        input[type="date"] {
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            padding: 8px;
+            width: 100%;
+            background-color: #f8f8f8;
+            color: #000;
+        }
+
+        input[type="submit"] {
+            background-color: #003366;
+            border: none;
+            border-radius: 7px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 30px;
+            width: 103%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005a9e;
+        }
+
+        /* Penambahan jarak setelah tabel penginputan */
+        form > *:not(:last-child) {
+            margin-bottom: 8px;
+        }
+        .button{
+            background-color: #003366;
+            border: none;
+            border-radius: 7px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 10px;
+            width: 103%;
+        }
+        .button:hover{
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+    <img class="logo" src="Logo.png" alt="ITS Mandiri Logo">
+    <h1>Form Input Data Mahasiswa</h1>
+    <h1>ITS MANDIRI 2023</h1>
+    <h5>Dibuat oleh : Muhammad Tedy Ramadan 220110018</h5>
+
+    <form action="Output.php" method="post">
+        <label for="nim">NIM</label>
+        <input type="text" id="nim" name="Nim" required>
+
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="Nama" required>
+
+        <label for="tempat_lahir">Tempat Lahir</label>
+        <input type="text" id="tempat_lahir" name="Tempat_Lahir" required>
+
+        <label for="tanggal_lahir">Tanggal Lahir</label>
+        <input type="date" id="tanggal_lahir" name="Tanggal_Lahir" required>
+
+        <label for="telp">Telepon</label>
+        <input type="tel" id="telp" name="Telp" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required>
+
+        <input type="submit" value="Submit">
+        <button onclick="window.location.href='Beranda.php'" class="button">Kembali</button>
+    </form>
+
+</body>
+</html>
